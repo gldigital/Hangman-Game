@@ -1,0 +1,40 @@
+img {
+    width: 150px;
+    height: auto;
+}
+.navbar-header {
+  width: 100%;
+  text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#word {
+    color: red;
+    padding: 20px 15px;
+}
+
+.box {
+    margin-top: 20px;
+    background: #f8f8f8;
+    padding: 20px 30px;
+    border-top: 5px #e7e7e7 solid;
+}
+
+.boxes {
+    text-align: center;
+    padding-left: 20px;
+
+
+}
+
+.boxes h3 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.boxes p {
+    font-size: 18px;
+}
