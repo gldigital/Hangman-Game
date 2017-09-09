@@ -1,87 +1,89 @@
+
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>NFL Hangman</title>
+    </head>
+    <body>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-</head>
-
-<body>
-
-    <nav class="navbar navbar-default">
-        <div class="navbar-header center-block">
-                <img src="https://s-media-cache-ak0.pinimg.com/originals/8b/db/14/8bdb1401ebfffd2c133358ceec78b7c3.jpg" alt="">
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>NFL Hangman</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-center">Try and guess the best NFL Teams EVER!</p>
-                <br>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 id="word" align="center"></h1>
-                    <br>
-                    <br>
-                    <h2 id="gamestatus"> </h2>
-                </div>
-            </div>
-        </div>
-
-    <div class="container-fluid box">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="boxes">
-                    <h3>Your Guess</h3>
-                    <p id="letterguess">-</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="boxes">
-                <h3>Remaining Guesses</h3>
-                <p id="badguess"></p>
-            </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="boxes">
-                <h3>Total Wins</h3>
-                <p id="won"></p>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
         <div class="container">
-            <p class="text-center" style="padding-top: 30px;">&copy; Greg Ladden</p>
+            
+        <a class="navbar-brand" href="/">NFL logo</a>
+
         </div>
-    </div>
+        
 
+        <!-- Jumbotron -->
+        
+        <div class="container">
 
-        <!-- jQuery CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript CDN -->
+                <div class="jumbotron text-center">
+                        <h1>NFL Hangman</h1>
+                        <p>Guess the correct team based on their % on winning<br> the Super Bowl. (Hint: The developer is biased)</p>
+                </div>
+
+                <div class="panel panel-default">
+                      <div class="panel-heading">
+                            <h3 class="panel-title">Guess Team</h3>
+                      </div>
+                      <div class="panel-body">
+                            <h2 id="wordToGuess">-------------</h2>
+                      </div>
+                </div>
+
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                              <h3 class="panel-title">Wrong Guesses</h3>
+                        </div>
+                        <div class="panel-body">
+                              <span id="wrongGuesses"></span>
+                        </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                        <div class="panel-heading">
+                              <h3 class="panel-title">Guesses Left</h3>
+                        </div>
+                        <div class="panel-body">
+                              <span id="numGuesses"></span>
+                        </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                        <div class="panel-heading">
+                              <h3 class="panel-title">Win Counter</h3>
+                        </div>
+                        <div class="panel-body">
+                              <span id="winCounter"></span>
+                        </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                        <div class="panel-heading">
+                              <h3 class="panel-title">Loss Counter</h3>
+                        </div>
+                        <div class="panel-body">
+                              <span id="lossCounter"></span>
+                        </div>
+                  </div>
+                
+                
+
+         </div>
+
+         <!-- Linking Logic.js file -->
+         <script src="assets/js/logic.js"></script>
+         
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- my JavaScript File  -->
-        <script type="text/javascript" src="js/game.js"></script>
-
-</body>
-
+    </body>
 </html>
